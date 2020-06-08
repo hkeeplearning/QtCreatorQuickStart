@@ -6,3 +6,7 @@
 
 `QDialog`: 各种对话框的基类，它们全部继承自`QWidget`
 
+## 基础窗口部件`QWidget`
+
+继承自`QObject`和`QPaintDevice`
+

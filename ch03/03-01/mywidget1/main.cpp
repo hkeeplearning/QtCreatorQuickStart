@@ -1,5 +1,5 @@
 // QtWidgets 包含了众多类的定义，如QApplication，QWidget等
-// Qt把没有嵌入到其他部件中的部件成为窗口
+// Qt把没有嵌入到其他部件中的部件称为窗口
 // 一般窗口都有边框和标题栏
 // 窗口就是没有父部件的部件，又称为顶级部件
 #include <QtWidgets>
@@ -24,21 +24,20 @@ int main(int argc, char *argv[])
     label1->setText(QObject::tr("Nothing is easy"));
     label1->resize(250, 20);
 
-    QWidget *widget1 = new QWidget(0, Qt::Dialog);
-    QWidget *widget2 = new QWidget(0, Qt::SplashScreen);
-//    QLabel *label2 = new QLabel(widget2);
-//    label2->setText(QObject::tr("label2"));
+    QWidget *widget1 = new QWidget(nullptr, Qt::Dialog);
+    QLabel *label2 = new QLabel(nullptr, Qt::SplashScreen | Qt::WindowStaysOnTopHint);
+    label2->setText(QObject::tr("label2"));
 
     // 在屏幕上显示
     label->show();
     widget->show();
 
     widget1->show();
-    widget2->show();
+    label2->show();
 
     int ret = app.exec();
 
-    delete widget2;
+    delete label2;
     delete widget1;
     delete label;
     delete  widget;
