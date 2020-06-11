@@ -35,6 +35,8 @@ C&heckBox // 快捷键 Alt + h
 数字选择框(&N) // 快捷键 Alt + n
 ```
 
+也可以使用QLabel的setBuddy()函数实现同样的功能。
+
 ## 设置 Tab 键顺序
 
 
