@@ -14,12 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QPushButton{
-	background-color: rgb(0, 170, 255);
-}
-QSlider{
-	background-color: rgb(170, 255, 0);
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton">

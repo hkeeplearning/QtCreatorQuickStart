@@ -29,3 +29,10 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    myresource.qrc
+
+DISTFILES += \
+    qss/my.qss \
+    qss/my2.qss

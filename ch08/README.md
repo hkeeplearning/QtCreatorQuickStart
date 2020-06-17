@@ -112,3 +112,10 @@ qApp->setStyleSheet("QGroupBox, QGroupBox *{color:red}");
 ？？？
 
 ### 自定义不见外观和换肤
+
+1. 盒子模型
+
+每个部件都可以被看作拥有4个同心矩形的盒子。
+
+![the box model](images/the-box-model.png)
+
