@@ -119,3 +119,6 @@ qApp->setStyleSheet("QGroupBox, QGroupBox *{color:red}");
 
 ![the box model](images/the-box-model.png)
 
+## 特殊效果窗体
+
+部件遮罩来实现不规则窗体
